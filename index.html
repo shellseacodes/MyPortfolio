@@ -3,38 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        setTimeout(function() {
+            var mainContent = document.querySelector('.main-content');
+            mainContent.classList.add('show');  
+        }, 2000);
+    </script>
 </head>
 
 <body>
 <!-- website content here-->
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        
+    </div>
+
     <div class="header">
         <h1>My Portfolio</h1>
         <p>Welcome to my Portfolio Website!</p>
     </div>
 
     <div class="main-content">
-        <h2>About Me</h2>
-        <p>Hello, I'm a dedicated computer science student attending Texas Southmost College, specializing in software engineering. With a strong foundation in C++, HTML, and CSS, I'm well-versed in programming and web development. Passionate about creating innovative solutions, I aim to contribute to the ever-evolving field of technology. Equipped with analytical thinking, teamwork, and communication skills, I excel in collaborative environments. My ultimate goal is to become a software engineer, leveraging my expertise to develop cutting-edge applications and drive technological advancements.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>C++</li>
-        </ul>
 
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
+        <h1 class="h1__title">Hi, I'm Chelsey</h2>
+        <p class="p1">Front-End Developer & Illustrator</p>
 
-        <h2>Contact</h2>
-        <P>ChelseySilva15@gmail.com</P>
+    </div>
+
+    <div class="illustration">
+        <img src="images/illustration.png" alt="illustration">
     </div>
 </body>
 
