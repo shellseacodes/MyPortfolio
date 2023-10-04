@@ -6,23 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    <script src="script.js"></script>   
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    <script>
-        setTimeout(function() {
-            var mainContent = document.querySelector('.main-content');
-            mainContent.classList.add('show');  
-        }, 2000);
-    </script>
 </head>
 
 <body>
@@ -30,10 +15,14 @@
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="home.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a></li>
+                <li>
+                    <a href="skills.html">Illustrations</a></li>
+                <li>
+                    <a href="projects.html">Projects</a></li>
             </ul>
         </nav>
 
@@ -56,6 +45,9 @@
         <img src="images/illustration.png" alt="illustration">
     </div>
 </body>
+
+
+</html>
 
 
 </html>
