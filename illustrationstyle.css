@@ -1,0 +1,332 @@
+
+.nav ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.23);
+    background-color: #99b7d7;
+    backface-visibility: hidden;
+    opacity: 0.8;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #fff;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1000px;
+    font-size: 25px;
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 80px;
+}
+
+.nav ul li a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 10vh;
+}
+section 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #abd374,transparent);
+    z-index: 10;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+section #text
+{
+    position: absolute;
+    color: #f5b558;
+    font-size: 8vw;
+    background-color: #fff;
+    border-radius: 9999px;
+    padding: 5px 50px 60px 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.55em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section #text span
+{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.prascroll2
+{
+    position: relative;
+    width: 100%;
+    height: 115vh;
+}
+.prascroll2::before 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #13151b, transparent);
+    z-index: 10;
+}
+.prascroll2 img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.parascroll2 #third3
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.prascroll2 #text
+{
+    position: absolute;
+    top: 13%;
+    left:90px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+}
+
+.inbetween::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.inbetween {
+    padding: 1950px;
+    width: 100%;
+    height: 100vh;
+    background-color: #13151b;
+    background-image: linear-gradient(to top, #344c54, transparent);
+    z-index: 5;
+}
+
+.inbetween #drawing4 {
+    width: 800px;
+    position: absolute;
+    top: 2400px;
+    left: 100px;
+}
+
+.inbetween #drawing5 {
+    width: 900px;
+    position: absolute;
+    top: 3700px;
+    right: 80px;
+}
+
+.inbetween #flowergirl {
+    width: 1200px;
+    position: absolute;
+    top: 4600px;
+    right: 350px;
+
+}
+
+.inbetween #text {
+    position: absolute;
+    font-size: 60px;
+    top: 2590px;
+    right: 300px;
+    color: #fff;
+}
+
+.inbetween #span {
+    position: absolute;
+    font-size: 30px;
+    top: 2700px;
+    left: 950px;
+    right: 9px;
+    color: #fff;
+}
+
+.inbetween #text1 {
+    position: absolute;
+    font-size: 60px;
+    top: 3750px;
+    left: 250px;
+    color: #fff;
+}
+
+.inbetween #span1 {
+    position: absolute;
+    font-size: 30px;
+    top: 3880px;
+    left: 60px;
+    right: 985px;
+    color: #fff;
+}
+
+.parascroll3
+{
+    position: relative;
+    padding: 0px;
+    width: 100vw;
+    height: 140vh;
+    background-color: #243143;
+}
+.parascroll3::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #262f27, transparent);
+    z-index: 20;
+}
+
+.parascroll3 #background3
+{
+    position: relative;
+    top: 80;
+    left: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parascroll3 #second3
+{
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+
+}
+
+.parascroll3 #sparkles
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+}
+
+.parascroll3 #stars
+{
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    width: 130%;
+}
+
+.parascroll3 #text
+{
+    position: absolute;
+    top: 5%;
+    right: 80px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+}
+
+.lastElements{
+    position: relative;
+    padding: 00px;
+    width: 100%;
+    height: 139vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lastElements::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #abd374,transparent);
+    z-index: 1;
+}
+
+.lastElements #jackbox
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.lastElements #blues
+{
+    position: relative;
+    top: 0px;
+    right: 90px;
+    width: 90%;
+}
+
+.lastElements #text
+{
+    position: absolute;
+    font-size: 60px;
+    top: 40px;
+    left: 30px;
+    color: #fff;
+}
+
+
+

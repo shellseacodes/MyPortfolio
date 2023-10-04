@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.23);
+    background-color: #99b7d7;
+    backface-visibility: hidden;
+    opacity: 0.8;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #fff;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1000px;
+    font-size: 25px;
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 80px;
+}
+
+.nav ul li a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.image-container img {
+    width: 60%;
+    position: relative;
+    margin-top: -350px;
+    margin-left: -150px;
+}
+
+.image-container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* CSS animation for the slide-up effect */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Applies the animation to the image container */
+  .image-container img {
+    animation: slideUp 0.8s ease forwards;
+  }
+
+  .about_title {
+    position: relative;
+    align-items: center;
+    margin: 100px 10px 40px 800px;
+    font-size: 60px;
+    color: #fff;
+    background-color: #776e95;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 20px;
+    justify-content: wrap;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .about_title.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .about_info {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 300px 100px 800px;
+    background-color: #f5b558;
+    padding: 7px 20px;
+    border-radius: 20px;
+    justify-content: wrap;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 0.8s forwards;
+  }
+
+  @keyframes slideInRight {
+    0% {
+        opactiy: 0;
+        transform: translateX(100%); /*start position off screen */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /*End position on screen */
+    }
+  }
+
+.element {
+    transition: transform 0.4s ease-in-out;
+}
+
+.element:hover {
+    transform: scale(1.03);
+}
